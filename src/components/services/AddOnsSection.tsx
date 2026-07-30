@@ -21,12 +21,12 @@ export default function AddOnsSection() {
           {addOns.map((item, index) => (
             <div
               key={index}
-              className="bg-white border border-slate-200/90 rounded-lg p-6 text-center shadow-sm space-y-2"
+              className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-6 text-center shadow-xs space-y-2"
             >
               <h3 className="font-semibold text-slate-900 text-base">
                 {item.title}
               </h3>
-              <p className="font-serif text-xl text-[#2B4336] font-medium">
+              <p className="font-serif text-xl text-[#2B4336] font-semibold">
                 {item.price}
               </p>
             </div>

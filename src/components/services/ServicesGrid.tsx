@@ -20,15 +20,15 @@ export default function ServicesGrid() {
           </p>
         </div>
 
+        {/* 2 Featured Core Services (Deep Sage Top Borders + Gold Price Badges) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {/* Card 1 */}
-          <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm flex flex-col justify-between space-y-6">
+          <div className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-8 shadow-xs flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex justify-between items-start gap-4">
                 <h3 className="font-serif text-2xl font-semibold text-slate-900">
                   Governance-Based Advocacy Visits
                 </h3>
-                <span className="bg-amber-100 text-[#2B4336] px-3 py-1 rounded-md text-base font-semibold whitespace-nowrap">
+                <span className="bg-amber-100 text-[#2B4336] border border-amber-200/80 px-3.5 py-1.5 rounded-md text-base font-semibold whitespace-nowrap shrink-0">
                   $495 per week
                 </span>
               </div>
@@ -39,7 +39,7 @@ export default function ServicesGrid() {
               </p>
 
               <div className="pt-4 border-t border-slate-100">
-                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-normal mb-3">
+                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
                   Includes
                 </h4>
                 <ul className="space-y-2 text-sm text-slate-800">
@@ -53,7 +53,9 @@ export default function ServicesGrid() {
                     "Optional photo documentation",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#2B4336] shrink-0" />
+                      <div className="p-1 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
+                        <Check className="w-3.5 h-3.5" />
+                      </div>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -63,21 +65,20 @@ export default function ServicesGrid() {
 
             <button
               onClick={triggerConsultation}
-              className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-2.5 rounded-md text-sm font-medium transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-3 rounded-md text-sm font-medium transition-colors shadow-xs"
             >
               <Calendar className="w-4 h-4" />
               <span>Schedule a Consultation</span>
             </button>
           </div>
 
-          {/* Card 2 */}
-          <div className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm flex flex-col justify-between space-y-6">
+          <div className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-8 shadow-xs flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="flex justify-between items-start gap-4">
                 <h3 className="font-serif text-2xl font-semibold text-slate-900">
                   Care Plan Governance
                 </h3>
-                <span className="bg-amber-100 text-[#2B4336] px-3 py-1 rounded-md text-base font-semibold whitespace-nowrap">
+                <span className="bg-amber-100 text-[#2B4336] border border-amber-200/80 px-3.5 py-1.5 rounded-md text-base font-semibold whitespace-nowrap shrink-0">
                   $650 per month
                 </span>
               </div>
@@ -88,7 +89,7 @@ export default function ServicesGrid() {
               </p>
 
               <div className="pt-4 border-t border-slate-100">
-                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-normal mb-3">
+                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
                   Includes
                 </h4>
                 <ul className="space-y-2 text-sm text-slate-800">
@@ -100,7 +101,9 @@ export default function ServicesGrid() {
                     "Monthly governance summary",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#2B4336] shrink-0" />
+                      <div className="p-1 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
+                        <Check className="w-3.5 h-3.5" />
+                      </div>
                       <span>{item}</span>
                     </li>
                   ))}
@@ -110,7 +113,7 @@ export default function ServicesGrid() {
 
             <button
               onClick={triggerConsultation}
-              className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-2.5 rounded-md text-sm font-medium transition-colors"
+              className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-3 rounded-md text-sm font-medium transition-colors shadow-xs"
             >
               <Calendar className="w-4 h-4" />
               <span>Schedule a Consultation</span>
@@ -118,14 +121,14 @@ export default function ServicesGrid() {
           </div>
         </div>
 
-        {/* Flat Fee & Hourly Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6">
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm space-y-3">
+        {/* 4 Secondary Flat-Fee / Hourly Services */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+          <div className="bg-white border border-slate-200 border-l-4 border-l-[#2B4336] rounded-lg p-6 shadow-xs space-y-3">
             <div className="flex justify-between items-start gap-4">
               <h3 className="font-serif text-xl font-semibold text-slate-900">
                 Family Governance & Decision Alignment
               </h3>
-              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap">
+              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap shrink-0">
                 $395 per session
               </span>
             </div>
@@ -135,12 +138,12 @@ export default function ServicesGrid() {
             </p>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm space-y-3">
+          <div className="bg-white border border-slate-200 border-l-4 border-l-[#2B4336] rounded-lg p-6 shadow-xs space-y-3">
             <div className="flex justify-between items-start gap-4">
               <h3 className="font-serif text-xl font-semibold text-slate-900">
                 Caregiving Operating Model Design
               </h3>
-              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap">
+              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap shrink-0">
                 $1,250 flat fee
               </span>
             </div>
@@ -150,12 +153,12 @@ export default function ServicesGrid() {
             </p>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm space-y-3">
+          <div className="bg-white border border-slate-200 border-l-4 border-l-[#2B4336] rounded-lg p-6 shadow-xs space-y-3">
             <div className="flex justify-between items-start gap-4">
               <h3 className="font-serif text-xl font-semibold text-slate-900">
                 Transition Navigation
               </h3>
-              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap">
+              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap shrink-0">
                 $995 flat fee
               </span>
             </div>
@@ -164,12 +167,12 @@ export default function ServicesGrid() {
             </p>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-lg p-6 shadow-sm space-y-3">
+          <div className="bg-white border border-slate-200 border-l-4 border-l-[#2B4336] rounded-lg p-6 shadow-xs space-y-3">
             <div className="flex justify-between items-start gap-4">
               <h3 className="font-serif text-xl font-semibold text-slate-900">
                 Advocacy & Issue Escalation
               </h3>
-              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap">
+              <span className="bg-slate-100 text-slate-900 px-2.5 py-1 rounded-md text-sm font-semibold whitespace-nowrap shrink-0">
                 $175 per hour
               </span>
             </div>

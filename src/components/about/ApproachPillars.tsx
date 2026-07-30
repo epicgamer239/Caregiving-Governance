@@ -34,13 +34,14 @@ export default function ApproachPillars() {
           </p>
         </div>
 
+        {/* Unified 3 Pillar Grid (All Deep Sage Accents) */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {pillars.map((pillar, index) => {
             const IconComponent = pillar.icon;
             return (
               <div
                 key={index}
-                className="bg-white border border-slate-200 rounded-lg p-8 shadow-sm border-t-4 border-t-[#2B4336] space-y-4"
+                className="bg-white border border-slate-200 rounded-lg p-8 shadow-xs border-t-4 border-t-[#2B4336] space-y-4"
               >
                 <div className="w-10 h-10 bg-amber-100 text-[#2B4336] rounded-md flex items-center justify-center">
                   <IconComponent className="w-5 h-5" />

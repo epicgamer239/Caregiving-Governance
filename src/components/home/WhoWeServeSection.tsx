@@ -32,7 +32,7 @@ export default function WhoWeServeSection() {
             <button
               key={index}
               onClick={triggerConsultation}
-              className="bg-white border border-slate-200 rounded-lg p-6 shadow-xs hover:border-[#2B4336] hover:shadow-md transition-all text-left flex flex-col justify-between group cursor-pointer"
+              className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-6 shadow-xs hover:shadow-md transition-all text-left flex flex-col justify-between group cursor-pointer"
             >
               <div className="space-y-4 mb-6">
                 <div className="w-8 h-8 rounded-md bg-amber-100 text-[#2B4336] flex items-center justify-center font-serif text-sm font-semibold">
@@ -43,7 +43,6 @@ export default function WhoWeServeSection() {
                 </strong>
               </div>
 
-              {/* Interactive Guided Link Entry Footer */}
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#2B4336] group-hover:underline decoration-amber-300 decoration-2 underline-offset-4 w-full">
                 <span>Guided Link Entry</span>
                 <ArrowUpRight className="w-4 h-4 text-[#2B4336] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

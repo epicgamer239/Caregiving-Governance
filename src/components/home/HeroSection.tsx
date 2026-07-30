@@ -12,7 +12,6 @@ export default function HeroSection() {
     <section className="py-16 md:py-24 border-b border-slate-200/80 bg-gradient-to-b from-[#FAF8F3] to-[#FBF9F5]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          {/* Left Column: Headline & Content */}
           <div className="lg:col-span-7 space-y-6">
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-slate-900 tracking-tight leading-tight">
               Caregiving Governance
@@ -46,13 +45,12 @@ export default function HeroSection() {
                 onClick={triggerConsultation}
                 className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#2B4336] border border-[#2B4336]/80 px-6 py-3.5 rounded-md text-base font-medium transition-all shadow-xs"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4 h-4 text-[#2B4336]" />
                 <span>Schedule a Consultation</span>
               </button>
             </div>
           </div>
 
-          {/* Right Column: Visual Indicator Placeholders */}
           <div className="lg:col-span-5">
             <div className="bg-white border border-slate-200 p-6 rounded-lg shadow-xs space-y-4">
               <h3 className="text-xs font-semibold text-slate-500 font-sans border-b border-slate-100 pb-3">
@@ -61,7 +59,7 @@ export default function HeroSection() {
 
               <ul className="space-y-3 text-sm text-slate-700">
                 <li className="flex items-center gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
-                  <div className="p-2 bg-amber-100/80 text-[#2B4336] rounded-md shrink-0">
+                  <div className="p-2 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
                     <ImageIcon className="w-4 h-4" />
                   </div>
                   <span className="font-medium text-slate-800">
@@ -71,7 +69,7 @@ export default function HeroSection() {
                 </li>
 
                 <li className="flex items-center gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
-                  <div className="p-2 bg-amber-100/80 text-[#2B4336] rounded-md shrink-0">
+                  <div className="p-2 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
                     <ImageIcon className="w-4 h-4" />
                   </div>
                   <span className="font-medium text-slate-800">
