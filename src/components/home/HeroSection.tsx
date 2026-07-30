@@ -9,7 +9,16 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-16 md:py-24 border-b border-slate-200/80 bg-gradient-to-b from-[#FAF8F3] to-[#FBF9F5]">
+    <section className="relative isolate overflow-hidden py-16 md:py-24 border-b border-slate-200/80 bg-[#2B4336]">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-20 bg-cover bg-center"
+        style={{ backgroundImage: "url('/caregiving-hero-backdrop.png')" }}
+      />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 bg-[#F8F5EE]/90"
+      />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6">
@@ -78,13 +87,6 @@ export default function HeroSection() {
                   <span className="font-medium text-slate-800">
                     Nursing Home Interior Design Hallway
                   </span>
-                </li>
-
-                <li className="flex items-center gap-3 p-3.5 bg-[#FBF9F5]/60 rounded-md border border-slate-200/50 text-slate-400 italic">
-                  <div className="p-2 bg-slate-100 text-slate-400 rounded-md shrink-0">
-                    <ImageIcon className="w-4 h-4" />
-                  </div>
-                  <span>[PLACEHOLDER TEXT]</span>
                 </li>
               </ul>
             </div>
