@@ -22,13 +22,16 @@ export default function HeroSection() {
               your family.
             </p>
 
-            <div className="p-6 bg-white border border-slate-200/80 rounded-lg shadow-xs border-l-4 border-l-[#2B4336]">
-              <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-                <strong className="text-[#2B4336] bg-amber-100/80 px-1.5 py-0.5 rounded-md font-semibold">
+            {/* Clean Deep Sage Callout Box (Warm Gold Typography) */}
+            <div className="p-6 bg-[#2B4336] border border-[#203328] rounded-lg shadow-sm">
+              <p className="text-base sm:text-lg leading-relaxed text-slate-100">
+                <strong className="text-amber-300 font-semibold border-b border-amber-300/40 pb-0.5 mr-1.5">
                   Clarity. Oversight. Accountability.
-                </strong>{" "}
-                Your loved one’s care deserves structure — and your family
-                deserves peace of mind.
+                </strong>
+                <span>
+                  Your loved one’s care deserves structure — and your family
+                  deserves peace of mind.
+                </span>
               </p>
             </div>
 

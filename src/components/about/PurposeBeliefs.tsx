@@ -5,7 +5,7 @@ export default function PurposeBeliefs() {
   return (
     <section className="py-16 md:py-20 border-b border-slate-200/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        {/* Our Purpose: Clean White Card with Deep Sage Left Accent Border */}
+        {/* Our Purpose */}
         <div className="bg-white border border-slate-200/90 border-l-4 border-l-[#2B4336] rounded-lg p-8 sm:p-12 shadow-xs space-y-6">
           <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900">
             Our Purpose
@@ -22,7 +22,7 @@ export default function PurposeBeliefs() {
 
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
             We provide{" "}
-            <strong className="text-[#2B4336] bg-amber-100/80 px-1.5 py-0.5 rounded-md font-semibold">
+            <strong className="text-[#2B4336] font-semibold border-b-2 border-amber-400/60 pb-0.5">
               non-clinical, professional oversight
             </strong>{" "}
             that ensures your loved one’s care is monitored, documented, and
@@ -55,18 +55,18 @@ export default function PurposeBeliefs() {
             What We Believe
           </h2>
 
-          {/* 3 Unified Cards (All Using Deep Sage Accent) */}
+          {/* 3 Unified Cards (No ALL CAPS Headers, No Single-Word Marker Boxes) */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] p-6 rounded-lg shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-[#2B4336]">
                 <Heart className="w-4 h-4 text-[#2B4336]" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 font-sans">
+                <span className="text-xs font-semibold text-slate-500 font-sans">
                   For Families
                 </span>
               </div>
               <p className="text-base text-slate-800 leading-relaxed">
                 Families deserve more than updates. They deserve{" "}
-                <strong className="text-[#2B4336] font-semibold bg-amber-100/80 px-1.5 py-0.5 rounded-md">
+                <strong className="text-[#2B4336] font-semibold border-b border-amber-400/60 pb-0.5">
                   clarity
                 </strong>
                 .
@@ -76,13 +76,13 @@ export default function PurposeBeliefs() {
             <div className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] p-6 rounded-lg shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-[#2B4336]">
                 <ShieldCheck className="w-4 h-4 text-[#2B4336]" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 font-sans">
+                <span className="text-xs font-semibold text-slate-500 font-sans">
                   For Loved Ones
                 </span>
               </div>
               <p className="text-base text-slate-800 leading-relaxed">
                 Loved ones deserve more than care. They deserve{" "}
-                <strong className="text-[#2B4336] font-semibold bg-amber-100/80 px-1.5 py-0.5 rounded-md">
+                <strong className="text-[#2B4336] font-semibold border-b border-amber-400/60 pb-0.5">
                   oversight
                 </strong>
                 .
@@ -92,13 +92,13 @@ export default function PurposeBeliefs() {
             <div className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] p-6 rounded-lg shadow-xs space-y-3">
               <div className="flex items-center gap-2 text-[#2B4336]">
                 <MessageSquare className="w-4 h-4 text-[#2B4336]" />
-                <span className="text-xs font-semibold uppercase tracking-wider text-slate-500 font-sans">
+                <span className="text-xs font-semibold text-slate-500 font-sans">
                   For Facilities
                 </span>
               </div>
               <p className="text-base text-slate-800 leading-relaxed">
                 Facilities deserve more than complaints. They deserve{" "}
-                <strong className="text-[#2B4336] font-semibold bg-amber-100/80 px-1.5 py-0.5 rounded-md">
+                <strong className="text-[#2B4336] font-semibold border-b border-amber-400/60 pb-0.5">
                   structured communication
                 </strong>
                 .
@@ -106,7 +106,7 @@ export default function PurposeBeliefs() {
             </div>
           </div>
 
-          {/* Unified Deep Sage Summary Block */}
+          {/* Unified Summary Block */}
           <div className="p-8 bg-[#2B4336] border border-[#203328] rounded-lg text-center shadow-md">
             <p className="text-base sm:text-lg text-slate-100 leading-relaxed max-w-3xl mx-auto">
               Caregiving Governance is built on the belief that when families

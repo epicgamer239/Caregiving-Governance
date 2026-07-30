@@ -27,7 +27,7 @@ export default function AleciaProfile() {
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
               Alecia brings more than two decades of{" "}
-              <strong className="text-[#2B4336] bg-amber-100/80 px-1.5 py-0.5 rounded-md font-semibold">
+              <strong className="text-[#2B4336] font-semibold">
                 organizational effectiveness, governance design, and
                 cross-functional alignment
               </strong>{" "}
@@ -35,7 +35,6 @@ export default function AleciaProfile() {
               organizations, and mission-driven environments.
             </p>
 
-            {/* Warm Amber Tinted Card for Centered Work List */}
             <div className="bg-amber-50/80 border border-amber-200/90 p-6 rounded-lg shadow-xs space-y-3">
               <h3 className="font-serif text-lg font-medium text-slate-900">
                 Her work has centered on:
@@ -70,7 +69,6 @@ export default function AleciaProfile() {
             </p>
           </div>
 
-          {/* Right Column: Headshot Gallery Placeholders */}
           <div className="lg:col-span-5 space-y-4">
             <div className="bg-white border border-slate-200 p-6 rounded-lg shadow-xs space-y-4">
               <h3 className="text-xs font-semibold text-slate-500 font-sans border-b border-slate-100 pb-3">

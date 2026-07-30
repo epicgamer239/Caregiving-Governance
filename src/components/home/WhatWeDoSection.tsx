@@ -27,7 +27,7 @@ export default function WhatWeDoSection() {
             </p>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
               Caregiving Governance provides{" "}
-              <strong className="text-[#2B4336] bg-amber-100/80 px-1.5 py-0.5 rounded-md font-semibold">
+              <strong className="text-[#2B4336] font-semibold border-b-2 border-amber-400/60 pb-0.5">
                 non-clinical, professional oversight
               </strong>{" "}
               that brings structure, accountability, and clarity to your loved
