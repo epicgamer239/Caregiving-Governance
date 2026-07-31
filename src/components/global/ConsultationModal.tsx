@@ -1,11 +1,20 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { X, Calendar } from "lucide-react";
+import { X, Calendar, Loader2 } from "lucide-react";
 
 export default function ConsultationModal() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    details: "",
+  });
 
   useEffect(() => {
     const handleOpen = () => setIsOpen(true);
@@ -13,6 +22,41 @@ export default function ConsultationModal() {
     return () =>
       window.removeEventListener("open-consultation-modal", handleOpen);
   }, []);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    try {
+      const response = await fetch("/api/consultation", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send request.");
+      }
+
+      setSubmitted(true);
+      setFormData({ fullName: "", email: "", phone: "", details: "" });
+    } catch (err) {
+      setErrorMessage(
+        "Something went wrong. Please try again or reach out directly.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   if (!isOpen) return null;
 
@@ -23,6 +67,7 @@ export default function ConsultationModal() {
           onClick={() => {
             setIsOpen(false);
             setSubmitted(false);
+            setErrorMessage("");
           }}
           className="absolute top-4 right-4 text-slate-400 hover:text-slate-700 transition-colors p-1"
         >
@@ -59,18 +104,18 @@ export default function ConsultationModal() {
             </button>
           </div>
         ) : (
-          <form
-            onSubmit={(e) => {
-              e.preventDefault();
-              setSubmitted(true);
-            }}
-            className="space-y-4"
-          >
+          <form onSubmit={handleSubmit} className="space-y-4">
             <p className="text-sm text-slate-600 leading-relaxed mb-4">
               A calm, structured conversation where we learn about your loved
               one’s care environment and identify the level of oversight you
               want.
             </p>
+
+            {errorMessage && (
+              <div className="p-3 bg-red-50 text-red-700 border border-red-200 rounded-md text-xs font-medium">
+                {errorMessage}
+              </div>
+            )}
 
             <div>
               <label className="block text-xs font-semibold text-slate-700 mb-1">
@@ -78,6 +123,9 @@ export default function ConsultationModal() {
               </label>
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
                 required
                 className="w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#2B4336]"
                 placeholder="Jane Doe"
@@ -90,6 +138,9 @@ export default function ConsultationModal() {
               </label>
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 required
                 className="w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#2B4336]"
                 placeholder="jane@example.com"
@@ -102,6 +153,9 @@ export default function ConsultationModal() {
               </label>
               <input
                 type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
                 required
                 className="w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#2B4336]"
                 placeholder="(555) 000-0000"
@@ -114,6 +168,9 @@ export default function ConsultationModal() {
               </label>
               <textarea
                 rows={3}
+                name="details"
+                value={formData.details}
+                onChange={handleChange}
                 className="w-full px-3 py-2 bg-white border border-slate-300 rounded-md text-sm text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#2B4336]"
                 placeholder="Briefly describe your loved one's care setting (e.g. Assisted Living, Skilled Nursing)..."
               ></textarea>
@@ -121,9 +178,17 @@ export default function ConsultationModal() {
 
             <button
               type="submit"
-              className="w-full bg-[#2B4336] hover:bg-[#203328] text-white py-2.5 rounded-md text-sm font-medium transition-colors shadow-sm mt-2"
+              disabled={isSubmitting}
+              className="w-full bg-[#2B4336] hover:bg-[#203328] disabled:bg-slate-400 text-white py-2.5 rounded-md text-sm font-medium transition-colors shadow-xs mt-2 flex items-center justify-center gap-2"
             >
-              Submit Consultation Request
+              {isSubmitting ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <span>Submitting Request...</span>
+                </>
+              ) : (
+                <span>Submit Consultation Request</span>
+              )}
             </button>
           </form>
         )}
