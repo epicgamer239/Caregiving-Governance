@@ -12,38 +12,32 @@ export default function ApproachPillars() {
     {
       title: "Governance-Forward",
       icon: ShieldCheck,
-      description:
-        "Oversight systems designed for accountability, clarity, and institutional alignment.",
+      description: "Built for accountability, clarity, and alignment.",
     },
     {
       title: "Structured",
       icon: LayoutGrid,
-      description:
-        "Consistent observational assessment, documentation, and reporting rhythms.",
+      description: "Consistent observation, documentation, and reporting.",
     },
     {
       title: "Protective",
       icon: HeartHandshake,
-      description:
-        "Early identification of concerns that protect resident dignity and well-being.",
+      description: "Early concern spotting that protects resident dignity.",
     },
     {
       title: "Non-Clinical",
       icon: Stethoscope,
-      description:
-        "Professional monitoring without medical or hands-on caregiving services.",
+      description: "Professional monitoring — no medical or hands-on care.",
     },
     {
       title: "Institutionally Aligned",
       icon: Building2,
-      description:
-        "Partnership-ready oversight that supports facilities and strengthens transparency.",
+      description: "Partnership-ready support that strengthens transparency.",
     },
     {
       title: "Human-Centered",
       icon: Users,
-      description:
-        "Calm, steady support that helps families and operators move forward with confidence.",
+      description: "Calm guidance families and operators can trust.",
     },
   ];
 
@@ -55,8 +49,7 @@ export default function ApproachPillars() {
             Philosophy & Approach
           </h2>
           <p className="text-base text-slate-600">
-            We help families and facilities make sense of complexity and move
-            forward with confidence.
+            Helping families and facilities move forward with confidence.
           </p>
         </div>
 

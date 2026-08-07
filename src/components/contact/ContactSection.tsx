@@ -12,28 +12,28 @@ export default function ContactSection() {
     <section className="py-16 md:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center space-y-4">
-          <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-slate-900">
+          <h1 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900">
             Request More Information
           </h1>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
-            Reach out to discuss proxy visits, governance reporting, facility
-            partnership programs, or Virginia launch opportunities.
+          <p className="text-base text-slate-700 leading-relaxed max-w-xl mx-auto">
+            Ask about proxy visits, reporting, facility partnerships, or the
+            Virginia launch.
           </p>
         </div>
 
         {/* Featured Deep Sage Consultation Callout Banner */}
-        <div className="bg-[#2B4336] border border-[#203328] rounded-xl p-8 sm:p-12 shadow-md text-center space-y-6">
+        <div className="bg-[#2B4336] border border-[#203328] rounded-xl p-8 sm:p-10 shadow-md text-center space-y-5">
           <div className="w-12 h-12 bg-amber-100 text-[#2B4336] rounded-md flex items-center justify-center mx-auto shrink-0">
             <Calendar className="w-6 h-6" />
           </div>
 
-          <div className="space-y-3 max-w-xl mx-auto">
-            <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-white">
+          <div className="space-y-2 max-w-lg mx-auto">
+            <h2 className="font-serif text-2xl font-semibold text-white">
               Book a Consultation
             </h2>
-            <p className="text-base text-slate-200 leading-relaxed">
-              A calm, structured conversation about resident oversight needs,
-              family visibility, and facility partnership options.
+            <p className="text-sm text-slate-200 leading-relaxed">
+              A short conversation about oversight needs for your resident or
+              facility.
             </p>
           </div>
 

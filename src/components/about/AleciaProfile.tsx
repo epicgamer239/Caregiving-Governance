@@ -1,13 +1,14 @@
-import { Check, Image as ImageIcon } from "lucide-react";
+import Image from "next/image";
+import { Check } from "lucide-react";
 
 export default function AleciaProfile() {
   const workFocusList = [
-    "governance and decision pathways",
-    "operating-model design",
-    "oversight systems",
-    "institutional accountability",
-    "federal advisory environments",
-    "prime-contractor compliance",
+    "Decision pathways",
+    "Operating models",
+    "Oversight systems",
+    "Institutional accountability",
+    "Federal advisory",
+    "Prime-contractor compliance",
   ];
 
   return (
@@ -26,12 +27,10 @@ export default function AleciaProfile() {
             </div>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Alecia Pazant is a governance-forward organizational effectiveness
-              leader with deep experience in federal advisory, prime-contractor
-              environments, and institutional accountability. Her work centers
-              on governance, decision pathways, operating-model design, and
-              oversight systems — disciplines that directly inform the
-              Caregiving Governance™ model.
+              A governance-forward leader with deep experience in federal
+              advisory, prime-contractor environments, and institutional
+              accountability. Her work in decision pathways, operating models,
+              and oversight systems shapes the Caregiving Governance™ approach.
             </p>
 
             <div className="bg-amber-50/80 border border-amber-200/90 p-6 rounded-lg shadow-xs space-y-3">
@@ -54,50 +53,36 @@ export default function AleciaProfile() {
             </div>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              She brings a rare ability to diagnose structural gaps, design
-              oversight systems, and strengthen accountability in complex
-              environments. Her background includes senior federal advisory
-              roles, service as a Presidential Appointee at the U.S. Small
-              Business Administration, and more than a decade supporting major
-              federal prime contractors in governance and compliance.
+              Her background includes senior federal advisory roles, service as
+              a Presidential Appointee at the U.S. Small Business
+              Administration, and more than a decade supporting major federal
+              prime contractors in governance and compliance.
             </p>
 
             <p className="text-base sm:text-lg font-serif text-[#2B4336] font-medium italic">
-              Caregiving Governance™ is a natural extension of her
-              governance-aligned identity: structured oversight, protective
-              monitoring, and institutional accountability for vulnerable
-              residents.
+              Caregiving Governance™ extends that work: structured oversight and
+              protective monitoring for vulnerable residents.
             </p>
           </div>
 
           <div className="lg:col-span-5 space-y-4">
-            <div className="bg-white border border-slate-200 p-6 rounded-lg shadow-xs space-y-4">
-              <h3 className="text-xs font-semibold text-slate-500 font-sans border-b border-slate-100 pb-3">
-                Executive Leadership Gallery & Headshots
-              </h3>
-
-              <ul className="space-y-3 text-sm text-slate-700">
-                <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
-                  <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
-                  <span className="font-medium text-slate-800">
-                    Female Executive Portraits
-                  </span>
-                </li>
-
-                <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
-                  <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
-                  <span className="font-medium text-slate-800">
-                    Corporate Finance Headshot | Corporate headshot poses
-                  </span>
-                </li>
-
-                <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
-                  <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
-                  <span className="font-medium text-slate-800">
-                    Headshot for Executive Leadership Consultant
-                  </span>
-                </li>
-              </ul>
+            <div className="bg-white border border-slate-200 p-4 sm:p-5 rounded-lg shadow-xs">
+              <div className="relative aspect-[3/4] w-full overflow-hidden rounded-md border border-slate-200/80 bg-[#FBF9F5]">
+                <Image
+                  src="/alecia-headshot.jpg"
+                  alt="Alecia Pazant, Founder of Caregiving Governance™"
+                  fill
+                  className="object-cover object-top"
+                  sizes="(max-width: 1024px) 90vw, 380px"
+                  priority
+                />
+              </div>
+              <p className="mt-4 text-sm font-medium text-slate-800 text-center">
+                Alecia Pazant
+              </p>
+              <p className="text-xs text-slate-500 text-center">
+                Founder, Caregiving Governance™
+              </p>
             </div>
           </div>
         </div>

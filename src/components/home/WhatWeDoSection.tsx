@@ -4,10 +4,10 @@ import { Check, ArrowRight } from "lucide-react";
 export default function WhatWeDoSection() {
   const groundingPoints = [
     "Governance-aligned oversight",
-    "Structured observational assessment",
-    "Trend tracking and escalation pathways",
-    "Non-clinical, protective monitoring",
-    "Institutional accountability and transparency",
+    "Structured observation",
+    "Trend tracking & escalation",
+    "Non-clinical monitoring",
+    "Institutional accountability",
   ];
 
   return (
@@ -19,11 +19,9 @@ export default function WhatWeDoSection() {
               What We Do
             </h2>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Caregiving Governance™ provides scheduled in-person proxy visits
-              and structured governance reporting for residents whose families
-              cannot visit regularly. Our oversight model identifies concerns
-              early, reduces neglect risk, and strengthens communication between
-              families and facilities.
+              Scheduled in-person proxy visits and structured reports for
+              residents whose families can’t visit regularly. We spot concerns
+              early and keep families and facilities aligned.
             </p>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
               Our work is grounded in{" "}
@@ -31,7 +29,7 @@ export default function WhatWeDoSection() {
                 governance-grade, protective oversight
               </strong>{" "}
               — non-clinical monitoring that brings clarity and accountability
-              to senior living environments.
+              to senior living.
             </p>
           </div>
 

@@ -3,12 +3,12 @@ import { Check } from "lucide-react";
 export default function WhyChooseUsSection() {
   const reasons = [
     "Governance-forward oversight",
-    "Structured reporting and documentation",
-    "Early detection of concerns",
-    "Non-clinical, protective monitoring",
-    "Trend tracking and accountability",
-    "Scalable staffing model",
-    "Facility partnership dashboards",
+    "Structured documentation",
+    "Early detection",
+    "Non-clinical monitoring",
+    "Trend tracking",
+    "Scalable staffing",
+    "Facility dashboards",
   ];
 
   return (

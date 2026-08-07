@@ -18,9 +18,8 @@ export default function WhyThisMattersSection() {
             Why This Matters
           </h2>
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-            Residents without regular visitors face higher risks. Families
-            experience anxiety and lack of visibility. Facilities face
-            complaints, ombudsman involvement, and reputational risk.
+            Residents without regular visitors face higher risk. Families lose
+            visibility. Facilities face complaints and reputational exposure.
           </p>
         </div>
 

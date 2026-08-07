@@ -8,13 +8,13 @@ export default function WhoWeServeSection() {
   };
 
   const audienceList = [
-    "Families living out of state",
+    "Out-of-state families",
     "Families with limited mobility",
     "Residents without visitors",
     "Memory care residents",
-    "Nursing homes with staffing shortages",
-    "Assisted living operators seeking transparency",
-    "CCRC governance-aligned communities",
+    "Understaffed nursing homes",
+    "Assisted living operators",
+    "CCRC communities",
   ];
 
   return (
@@ -25,8 +25,8 @@ export default function WhoWeServeSection() {
             Who We Serve
           </h2>
           <p className="text-base text-[#2B4336] font-medium">
-            These families and operators don’t need more noise — they need
-            clarity, structure, and protective oversight.
+            Families and operators who need clarity and protective oversight —
+            not more noise.
           </p>
         </div>
 

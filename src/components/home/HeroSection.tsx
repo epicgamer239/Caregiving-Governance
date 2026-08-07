@@ -14,13 +14,12 @@ export default function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="lg:col-span-7 space-y-4 md:space-y-5">
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-semibold text-slate-900 tracking-tight leading-[1.15]">
-              Governance-Forward Oversight for Nursing Home & Assisted Living
-              Residents
+              Oversight for Nursing Home & Assisted Living Residents
             </h1>
 
-            <p className="text-base sm:text-lg text-[#2B4336] font-medium leading-snug max-w-2xl">
-              Structured proxy visits, governance-grade reporting, and clear
-              escalation pathways — powered by Caregiving Governance™.
+            <p className="text-base sm:text-lg text-[#2B4336] font-medium leading-snug max-w-xl">
+              In-person proxy visits, clear reports, and escalation pathways —
+              for families and senior living operators.
             </p>
 
             <div className="flex flex-wrap gap-3 items-center pt-1">
@@ -47,8 +46,8 @@ export default function HeroSection() {
                   Protect. Report. Escalate.
                 </strong>
                 <span>
-                  In-person proxy visits and structured oversight for residents
-                  whose families cannot visit regularly.
+                  In-person proxy visits for residents whose families can’t
+                  visit regularly.
                 </span>
               </p>
             </div>
@@ -65,7 +64,7 @@ export default function HeroSection() {
 
               <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/60 shadow-xs flex items-center gap-2.5 text-xs text-slate-800 font-medium">
                 <ShieldCheck className="w-4 h-4 text-[#2B4336] shrink-0" />
-                <span>Governance-Grade Oversight & Dedicated Presence</span>
+                <span>Protective oversight when families can’t visit regularly</span>
               </div>
             </div>
           </div>

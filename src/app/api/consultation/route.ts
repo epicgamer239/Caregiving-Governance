@@ -3,11 +3,14 @@ import { NextResponse } from 'next/server';
 export async function POST(request: Request) {
   try {
     const body = await request.json();
-    const scriptUrl = process.env.GOOGLE_APPS_SCRIPT_URL;
+    const scriptUrl =
+      process.env.CONTACT_FORM_SCRIPT_URL ||
+      process.env.GOOGLE_APPS_SCRIPT_URL ||
+      process.env.NEXT_PUBLIC_CONTACT_FORM_SCRIPT_URL;
 
     if (!scriptUrl) {
       return NextResponse.json(
-        { error: 'Google Apps Script URL is missing in environment variables.' },
+        { error: 'Contact form script URL is missing in environment variables.' },
         { status: 500 }
       );
     }

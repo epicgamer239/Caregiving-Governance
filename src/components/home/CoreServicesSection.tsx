@@ -12,32 +12,27 @@ export default function CoreServicesSection() {
   const services = [
     {
       title: "Scheduled Proxy Visits",
-      description:
-        "Weekly, biweekly, or monthly in-person visits with structured observational review.",
+      description: "Weekly, biweekly, or monthly in-person observational visits.",
       icon: ClipboardList,
     },
     {
       title: "Governance-Grade Reporting",
-      description:
-        "Clear, structured reports sent to families after each visit.",
+      description: "Clear reports sent to families after each visit.",
       icon: FileText,
     },
     {
       title: "Escalation Pathways",
-      description:
-        "Four-level escalation model ensuring concerns are addressed promptly.",
+      description: "A four-level model so concerns get addressed promptly.",
       icon: ShieldAlert,
     },
     {
-      title: "Facility Partnership Programs",
-      description:
-        "Governance dashboards, trend analysis, and transparency support for operators.",
+      title: "Facility Partnerships",
+      description: "Dashboards, trend analysis, and transparency support.",
       icon: Building2,
     },
     {
-      title: "Resident Protection & Early Detection",
-      description:
-        "Trend tracking that identifies issues before they escalate.",
+      title: "Early Detection",
+      description: "Trend tracking that flags issues before they escalate.",
       icon: Activity,
     },
   ];
@@ -50,8 +45,7 @@ export default function CoreServicesSection() {
             Core Services
           </h2>
           <p className="text-base text-slate-600">
-            Protective oversight designed for families and senior living
-            operators.
+            Protective oversight for families and senior living operators.
           </p>
         </div>
 

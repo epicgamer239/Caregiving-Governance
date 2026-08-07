@@ -9,9 +9,8 @@ export default function AboutHero() {
           A Governance-Forward Approach to Resident Oversight
         </h1>
         <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-3xl mx-auto">
-          Protecting residents through structured proxy visits, governance
-          reporting, and institutional accountability — delivered through
-          Caregiving Governance™.
+          Proxy visits, structured reporting, and accountability — delivered
+          through Caregiving Governance™.
         </p>
         <div className="pt-2">
           <Link

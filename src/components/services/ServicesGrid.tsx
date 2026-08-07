@@ -5,20 +5,18 @@ import { Check, Calendar } from "lucide-react";
 const services = [
   {
     title: "Scheduled Proxy Visits",
-    description:
-      "Structured in-person visits with observational review for residents whose families cannot visit regularly.",
+    description: "In-person visits with structured observational review.",
     items: [
-      "Resident Interaction",
-      "Room & Environment Review",
-      "Safety Indicators",
-      "Staff Responsiveness Snapshot",
-      "Trend Tracking",
+      "Resident interaction",
+      "Room & environment",
+      "Safety indicators",
+      "Staff responsiveness",
+      "Trend tracking",
     ],
   },
   {
     title: "Governance-Grade Reporting",
-    description:
-      "Clear, structured reports sent to families after each visit.",
+    description: "Clear reports sent to families after each visit.",
     items: [
       "Appearance & hygiene",
       "Mood & engagement",
@@ -26,28 +24,27 @@ const services = [
       "Safety cues",
       "Staff responsiveness",
       "Red flags",
-      "Recommended follow-up",
+      "Follow-up recommendations",
     ],
   },
   {
     title: "Escalation Pathways",
-    description:
-      "Four-level escalation model ensuring concerns are addressed promptly.",
+    description: "Four levels so concerns get handled promptly.",
     items: [
       "Level 1: Monitor",
       "Level 2: Notify family",
       "Level 3: Notify facility",
-      "Level 4: Formal escalation (ombudsman, leadership)",
+      "Level 4: Formal escalation",
     ],
   },
   {
     title: "Facility Partnership Programs",
-    description: "Governance dashboards and transparency support for operators.",
+    description: "Dashboards and transparency support for operators.",
     items: [
-      "Quarterly Governance Dashboards",
-      "Trend Analysis",
-      "Family Council Reporting",
-      "Oversight Training",
+      "Quarterly dashboards",
+      "Trend analysis",
+      "Family council reporting",
+      "Oversight training",
     ],
   },
   {
@@ -55,17 +52,16 @@ const services = [
     description: "Trend tracking that identifies issues early.",
     items: [
       "Hygiene trends",
-      "Room condition stability",
-      "Staff responsiveness patterns",
+      "Room condition",
+      "Staff responsiveness",
       "Decline indicators",
       "Complaint reduction",
     ],
   },
   {
     title: "Virginia Launch Services",
-    description:
-      "Focused rollout in Northern Virginia, Richmond, and Hampton Roads.",
-    items: ["Pilot Programs", "Operator Outreach", "Family Enrollment"],
+    description: "Northern Virginia, Richmond, and Hampton Roads.",
+    items: ["Pilot programs", "Operator outreach", "Family enrollment"],
   },
 ];
 
@@ -75,82 +71,84 @@ export default function ServicesGrid() {
   };
 
   return (
-    <section className="py-16 md:py-20 border-b border-slate-200/80">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-        <div className="text-center max-w-3xl mx-auto space-y-4">
-          <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-slate-900">
-            Oversight Designed for Resident Protection & Institutional
-            Accountability
+    <section className="py-14 md:py-20 border-b border-slate-200/80">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+        <div className="max-w-2xl space-y-3">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-900 leading-tight">
+            Resident Protection & Institutional Accountability
           </h1>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-            Structured proxy visits, governance reporting, and escalation
-            pathways that strengthen transparency and reduce risk — powered by
-            Caregiving Governance™.
+          <p className="text-base text-slate-700 leading-relaxed">
+            Proxy visits, reporting, and escalation pathways that strengthen
+            transparency and reduce risk.
           </p>
         </div>
 
-        <div className="bg-white border border-slate-200/80 border-l-4 border-l-[#2B4336] rounded-xl p-8 sm:p-10 shadow-xs space-y-4 max-w-4xl mx-auto">
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-            Traditional caregiving services focus on tasks and clinical support.
-            Ombudsman programs are reactive. Families often lack visibility.
-            Facilities face complaints and reputational risk.
-          </p>
-          <p className="text-lg sm:text-xl font-serif text-[#2B4336] font-medium leading-snug">
-            Caregiving Governance™ operates at a different level.
-          </p>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-            We provide governance-grade oversight that strengthens
-            accountability, improves communication, and ensures residents receive
-            consistent attention — especially those without regular visitors.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+          <div className="bg-white border border-slate-200 rounded-lg p-4 shadow-xs">
+            <p className="font-medium text-slate-900 mb-1">Traditional care</p>
+            <p className="text-slate-600 leading-snug">
+              Focuses on tasks and clinical support.
+            </p>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-lg p-4 shadow-xs">
+            <p className="font-medium text-slate-900 mb-1">Ombudsman programs</p>
+            <p className="text-slate-600 leading-snug">
+              Often reactive — after a concern surfaces.
+            </p>
+          </div>
+          <div className="bg-[#2B4336] border border-[#203328] rounded-lg p-4 shadow-xs">
+            <p className="font-medium text-amber-200 mb-1">
+              Caregiving Governance™
+            </p>
+            <p className="text-slate-200 leading-snug">
+              Proactive oversight with consistent attention and clear follow-up.
+            </p>
+          </div>
         </div>
 
-        <div className="space-y-4 pt-4">
-          <h2 className="font-serif text-3xl font-semibold text-slate-900 text-center">
-            Core Services
-          </h2>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-8 shadow-xs flex flex-col justify-between space-y-6"
+        <div className="space-y-5">
+          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+            <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-slate-900">
+              Core Services
+            </h2>
+            <button
+              onClick={triggerConsultation}
+              className="inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white px-4 py-2.5 rounded-md text-sm font-medium transition-colors shadow-xs shrink-0"
             >
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl font-semibold text-slate-900">
-                  {service.title}
-                </h3>
-                <p className="text-sm text-slate-700 leading-relaxed">
-                  {service.description}
-                </p>
+              <Calendar className="w-4 h-4" />
+              <span>Book a Consultation</span>
+            </button>
+          </div>
 
-                <div className="pt-4 border-t border-slate-100">
-                  <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">
-                    Includes
-                  </h4>
-                  <ul className="space-y-2 text-sm text-slate-800">
-                    {service.items.map((item, idx) => (
-                      <li key={idx} className="flex items-center gap-2.5">
-                        <div className="p-1 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
-                          <Check className="w-3.5 h-3.5" />
-                        </div>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <button
-                onClick={triggerConsultation}
-                className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-3 rounded-md text-sm font-medium transition-colors shadow-xs"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-5 sm:p-6 shadow-xs space-y-3"
               >
-                <Calendar className="w-4 h-4" />
-                <span>Book a Consultation</span>
-              </button>
-            </div>
-          ))}
+                <div>
+                  <h3 className="font-serif text-xl font-semibold text-slate-900">
+                    {service.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-slate-600 leading-snug">
+                    {service.description}
+                  </p>
+                </div>
+
+                <ul className="flex flex-wrap gap-1.5 pt-1">
+                  {service.items.map((item) => (
+                    <li
+                      key={item}
+                      className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#FBF9F5] border border-slate-200/80 text-xs font-medium text-slate-700"
+                    >
+                      <Check className="w-3 h-3 text-[#2B4336] shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

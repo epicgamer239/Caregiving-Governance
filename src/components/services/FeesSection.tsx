@@ -11,12 +11,12 @@ export default function FeesSection() {
     <section className="py-16 md:py-20 border-b border-slate-200/80">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900 mb-4">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900 mb-3">
             Services & Fees
           </h2>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-            Transparent, governance-based engagement models offering
-            non-clinical oversight, clear structure, and dedicated advocacy.
+          <p className="text-base text-slate-700 leading-relaxed">
+            Transparent engagement models for non-clinical oversight and
+            advocacy.
           </p>
         </div>
 
