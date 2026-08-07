@@ -8,22 +8,25 @@ export default function WhoWeServeSection() {
   };
 
   const audienceList = [
-    "Adult children living out of state",
-    "Families overwhelmed by caregiving complexity",
-    "Siblings who need structured updates",
-    "Loved ones in complex care environments",
-    "Families seeking professional oversight",
+    "Families living out of state",
+    "Families with limited mobility",
+    "Residents without visitors",
+    "Memory care residents",
+    "Nursing homes with staffing shortages",
+    "Assisted living operators seeking transparency",
+    "CCRC governance-aligned communities",
   ];
 
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-16 md:py-20 border-b border-slate-200/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900 mb-2">
+        <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
+          <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900">
             Who We Serve
           </h2>
           <p className="text-base text-[#2B4336] font-medium">
-            Each begins with a Guided Link.
+            These families and operators don’t need more noise — they need
+            clarity, structure, and protective oversight.
           </p>
         </div>
 
@@ -36,7 +39,7 @@ export default function WhoWeServeSection() {
             >
               <div className="space-y-4 mb-6">
                 <div className="w-8 h-8 rounded-md bg-amber-100 text-[#2B4336] flex items-center justify-center font-serif text-sm font-semibold">
-                  0{index + 1}
+                  {String(index + 1).padStart(2, "0")}
                 </div>
                 <strong className="block text-base font-semibold text-slate-900 group-hover:text-[#2B4336] transition-colors leading-snug">
                   {item}
@@ -44,7 +47,7 @@ export default function WhoWeServeSection() {
               </div>
 
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-semibold text-[#2B4336] group-hover:underline decoration-amber-300 decoration-2 underline-offset-4 w-full">
-                <span>Guided Link Entry</span>
+                <span>Book a Consultation</span>
                 <ArrowUpRight className="w-4 h-4 text-[#2B4336] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </div>
             </button>

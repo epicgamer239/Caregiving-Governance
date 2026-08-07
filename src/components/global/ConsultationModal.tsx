@@ -79,7 +79,7 @@ export default function ConsultationModal() {
             <Calendar className="w-5 h-5" />
           </div>
           <h3 className="font-serif text-2xl font-semibold text-slate-900">
-            Schedule a Consultation
+            Book a Consultation
           </h3>
         </div>
 

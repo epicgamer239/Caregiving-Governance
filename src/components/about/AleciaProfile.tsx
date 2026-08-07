@@ -2,12 +2,12 @@ import { Check, Image as ImageIcon } from "lucide-react";
 
 export default function AleciaProfile() {
   const workFocusList = [
-    "governance frameworks",
-    "operating model design",
-    "decision pathways",
-    "accountability structures",
-    "executive advisory",
-    "organizational clarity",
+    "governance and decision pathways",
+    "operating-model design",
+    "oversight systems",
+    "institutional accountability",
+    "federal advisory environments",
+    "prime-contractor compliance",
   ];
 
   return (
@@ -17,22 +17,21 @@ export default function AleciaProfile() {
           <div className="lg:col-span-7 space-y-6">
             <div>
               <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-slate-900 mb-2">
-                About Alecia Pazant
+                Alecia Pazant
               </h2>
               <p className="text-base text-[#2B4336] font-medium">
-                Founder, Caregiving Governance™ Principal & Strategic Advisor,
-                Pazant Consulting Services
+                Founder, Caregiving Governance™ · Organizational Effectiveness &
+                Governance Leader
               </p>
             </div>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Alecia brings more than two decades of{" "}
-              <strong className="text-[#2B4336] font-semibold">
-                organizational effectiveness, governance design, and
-                cross-functional alignment
-              </strong>{" "}
-              experience across research institutions, federal-aligned
-              organizations, and mission-driven environments.
+              Alecia Pazant is a governance-forward organizational effectiveness
+              leader with deep experience in federal advisory, prime-contractor
+              environments, and institutional accountability. Her work centers
+              on governance, decision pathways, operating-model design, and
+              oversight systems — disciplines that directly inform the
+              Caregiving Governance™ model.
             </p>
 
             <div className="bg-amber-50/80 border border-amber-200/90 p-6 rounded-lg shadow-xs space-y-3">
@@ -55,17 +54,19 @@ export default function AleciaProfile() {
             </div>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              She created Caregiving Governance™ after witnessing how families
-              struggle inside complex care environments — not because they lack
-              love, but because they lack{" "}
-              <strong className="text-[#2B4336] font-semibold">
-                structure
-              </strong>
-              .
+              She brings a rare ability to diagnose structural gaps, design
+              oversight systems, and strengthen accountability in complex
+              environments. Her background includes senior federal advisory
+              roles, service as a Presidential Appointee at the U.S. Small
+              Business Administration, and more than a decade supporting major
+              federal prime contractors in governance and compliance.
             </p>
 
             <p className="text-base sm:text-lg font-serif text-[#2B4336] font-medium italic">
-              Her approach is calm, steady, and deeply human.
+              Caregiving Governance™ is a natural extension of her
+              governance-aligned identity: structured oversight, protective
+              monitoring, and institutional accountability for vulnerable
+              residents.
             </p>
           </div>
 
@@ -76,11 +77,6 @@ export default function AleciaProfile() {
               </h3>
 
               <ul className="space-y-3 text-sm text-slate-700">
-                <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5]/60 rounded-md border border-slate-200/50 text-slate-400 italic">
-                  <ImageIcon className="w-4 h-4 text-slate-400 mt-0.5 shrink-0" />
-                  <span>[PLACEHOLDER TEXT]</span>
-                </li>
-
                 <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
                   <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
                   <span className="font-medium text-slate-800">
@@ -91,15 +87,14 @@ export default function AleciaProfile() {
                 <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
                   <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
                   <span className="font-medium text-slate-800">
-                    Corporate Finance Headshot | Corporate headshot poses,
-                    Corporate ...
+                    Corporate Finance Headshot | Corporate headshot poses
                   </span>
                 </li>
 
                 <li className="flex items-start gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70 hover:border-[#2B4336]/40 transition-colors">
                   <ImageIcon className="w-4 h-4 text-[#2B4336] mt-0.5 shrink-0" />
                   <span className="font-medium text-slate-800">
-                    Headshot for Executive Leadership Consultant - Testimonial
+                    Headshot for Executive Leadership Consultant
                   </span>
                 </li>
               </ul>

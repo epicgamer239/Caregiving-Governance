@@ -2,13 +2,12 @@ import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 
 export default function WhatWeDoSection() {
-  const checkPoints = [
-    "What’s happening",
-    "Who is responsible",
-    "What needs follow-through",
-    "Where issues exist",
-    "How decisions should be made",
-    "How to stay aligned",
+  const groundingPoints = [
+    "Governance-aligned oversight",
+    "Structured observational assessment",
+    "Trend tracking and escalation pathways",
+    "Non-clinical, protective monitoring",
+    "Institutional accountability and transparency",
   ];
 
   return (
@@ -20,28 +19,29 @@ export default function WhatWeDoSection() {
               What We Do
             </h2>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Caregiving today is fragmented, complex, and emotionally
-              overwhelming. Families often feel distant from what’s happening
-              inside the facility, unsure whether their loved one is receiving
-              the attention, follow-through, or communication they deserve.
+              Caregiving Governance™ provides scheduled in-person proxy visits
+              and structured governance reporting for residents whose families
+              cannot visit regularly. Our oversight model identifies concerns
+              early, reduces neglect risk, and strengthens communication between
+              families and facilities.
             </p>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Caregiving Governance provides{" "}
+              Our work is grounded in{" "}
               <strong className="text-[#2B4336] font-semibold border-b-2 border-amber-400/60 pb-0.5">
-                non-clinical, professional oversight
+                governance-grade, protective oversight
               </strong>{" "}
-              that brings structure, accountability, and clarity to your loved
-              one’s care — without providing medical or hands-on services.
+              — non-clinical monitoring that brings clarity and accountability
+              to senior living environments.
             </p>
           </div>
 
           <div className="border-t border-b border-slate-100 py-8 space-y-4">
             <h3 className="font-serif text-xl font-medium text-slate-900">
-              We ensure your family always knows:
+              Our work is grounded in:
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {checkPoints.map((item, idx) => (
+              {groundingPoints.map((item, idx) => (
                 <div
                   key={idx}
                   className="flex items-center gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70"
@@ -59,8 +59,7 @@ export default function WhatWeDoSection() {
 
           <div className="space-y-4 pt-2">
             <p className="font-serif text-xl text-[#2B4336] font-medium leading-snug">
-              This is governance. This is oversight. This is calm, structured
-              support.
+              Early detection. Structured reporting. Clear escalation.
             </p>
 
             <div>
@@ -68,7 +67,7 @@ export default function WhatWeDoSection() {
                 href="/about"
                 className="inline-flex items-center gap-2 text-[#2B4336] font-semibold text-base hover:underline decoration-amber-300 decoration-2 underline-offset-4"
               >
-                <span>Learn about governance</span>
+                <span>Learn How We Work</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -78,4 +77,3 @@ export default function WhatWeDoSection() {
     </section>
   );
 }
- 

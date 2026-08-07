@@ -15,11 +15,11 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 bg-[#FBF9F5]/95 backdrop-blur-md border-b border-slate-200/80">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-4">
         {/* Brand Logo & Title */}
         <Link
           href="/"
-          className="group flex items-center gap-2.5 sm:gap-3"
+          className="group flex items-center gap-2.5 sm:gap-3 z-10"
           onClick={() => setIsMobileMenuOpen(false)}
         >
           <Image
@@ -35,8 +35,8 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-700">
+        {/* Desktop Navigation — truly centered in the header */}
+        <nav className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center space-x-8 text-sm font-medium text-slate-700">
           <Link href="/" className="hover:text-[#2B4336] transition-colors">
             Home
           </Link>
@@ -50,7 +50,7 @@ export default function Navbar() {
             href="/services"
             className="hover:text-[#2B4336] transition-colors"
           >
-            Services & Fees
+            Services
           </Link>
           <Link
             href="/contact"
@@ -61,18 +61,18 @@ export default function Navbar() {
         </nav>
 
         {/* Desktop CTA Button */}
-        <div className="hidden md:block">
+        <div className="hidden md:block z-10">
           <button
             onClick={triggerConsultation}
             className="inline-flex items-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white px-4 py-2.5 rounded-md text-sm font-medium transition-colors shadow-xs"
           >
             <Calendar className="w-4 h-4" />
-            <span>Schedule a Consultation</span>
+            <span>Book a Consultation</span>
           </button>
         </div>
 
         {/* Mobile Hamburger Button */}
-        <div className="flex items-center md:hidden">
+        <div className="flex items-center md:hidden z-10">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle navigation menu"
@@ -110,7 +110,7 @@ export default function Navbar() {
               onClick={() => setIsMobileMenuOpen(false)}
               className="p-3 hover:bg-amber-100/60 rounded-md hover:text-[#2B4336] transition-colors"
             >
-              Services & Fees
+              Services
             </Link>
             <Link
               href="/contact"
@@ -127,7 +127,7 @@ export default function Navbar() {
               className="w-full inline-flex items-center justify-center gap-2 bg-[#2B4336] hover:bg-[#203328] text-white py-3 rounded-md text-sm font-medium transition-colors shadow-xs"
             >
               <Calendar className="w-4 h-4" />
-              <span>Schedule a Consultation</span>
+              <span>Book a Consultation</span>
             </button>
           </div>
         </div>

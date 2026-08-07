@@ -7,12 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-[#203328]">
           <div className="space-y-3">
             <span className="font-serif text-2xl font-semibold text-white block">
-              Caregiving Governance
+              Caregiving Governance™
             </span>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
-              Structured oversight for your loved one’s care. Bringing clarity,
-              accountability, and calm support to families in complex care
-              environments.
+              Governance-grade oversight through scheduled in-person proxy
+              visits, structured reporting, and clear escalation pathways for
+              residents, families, and senior living operators.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ export default function Footer() {
                   href="/services"
                   className="hover:text-amber-300 transition-colors"
                 >
-                  Services & Fees
+                  Services
                 </Link>
               </li>
               <li>
@@ -58,11 +58,12 @@ export default function Footer() {
 
           <div className="space-y-3">
             <h4 className="font-serif text-lg font-medium text-amber-200">
-              Pazant Consulting Services
+              Founded by Alecia Pazant
             </h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Caregiving Governance™ is a specialized advisory standard designed
-              by Alecia Pazant, Founder & Strategic Advisor.
+              Caregiving Governance™ delivers structured oversight, protective
+              monitoring, and institutional accountability for vulnerable
+              residents.
             </p>
           </div>
         </div>
@@ -73,8 +74,8 @@ export default function Footer() {
             reserved.
           </p>
           <p>
-            Providing non-clinical, professional oversight and strategic family
-            governance.
+            Non-clinical, governance-aligned oversight for senior living
+            environments.
           </p>
         </div>
       </div>

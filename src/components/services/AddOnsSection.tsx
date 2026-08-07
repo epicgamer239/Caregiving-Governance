@@ -6,7 +6,7 @@ export default function AddOnsSection() {
   ];
 
   return (
-    <section className="py-16 md:py-20">
+    <section className="py-16 md:py-20 border-b border-slate-200/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-xl mx-auto mb-10">
           <h2 className="font-serif text-3xl font-semibold text-slate-900 mb-2">

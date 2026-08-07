@@ -18,9 +18,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Caregiving Governance™ | Structured Oversight & Guidance",
+  title: "Caregiving Governance™ | Governance-Forward Resident Oversight",
   description:
-    "Bringing structure, clarity, and accountability to families navigating complex care environments.",
+    "Scheduled in-person proxy visits, governance-grade reporting, and clear escalation pathways that protect residents, support families, and strengthen transparency for senior living operators.",
 };
 
 export default function RootLayout({

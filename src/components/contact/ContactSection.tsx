@@ -13,11 +13,11 @@ export default function ContactSection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         <div className="text-center space-y-4">
           <h1 className="font-serif text-4xl sm:text-5xl font-semibold text-slate-900">
-            We’re Here When Your Family Needs Support
+            Request More Information
           </h1>
           <p className="text-base sm:text-lg text-slate-700 leading-relaxed max-w-2xl mx-auto">
-            Caregiving can feel overwhelming, fragmented, or uncertain. Reaching
-            out is the first step toward structure, clarity, and peace of mind.
+            Reach out to discuss proxy visits, governance reporting, facility
+            partnership programs, or Virginia launch opportunities.
           </p>
         </div>
 
@@ -29,12 +29,11 @@ export default function ContactSection() {
 
           <div className="space-y-3 max-w-xl mx-auto">
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold text-white">
-              Schedule a Consultation
+              Book a Consultation
             </h2>
             <p className="text-base text-slate-200 leading-relaxed">
-              A calm, structured conversation where we learn about your loved
-              one’s care environment and identify the level of oversight you
-              want.
+              A calm, structured conversation about resident oversight needs,
+              family visibility, and facility partnership options.
             </p>
           </div>
 
@@ -44,7 +43,7 @@ export default function ContactSection() {
               className="inline-flex items-center gap-2 bg-amber-300 hover:bg-amber-400 text-slate-950 px-8 py-3.5 rounded-md text-base font-semibold transition-colors shadow-xs"
             >
               <Calendar className="w-4 h-4 text-slate-950" />
-              <span>Schedule a Consultation</span>
+              <span>Book a Consultation</span>
             </button>
           </div>
         </div>
