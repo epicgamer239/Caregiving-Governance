@@ -16,8 +16,8 @@ export default function ContactSection() {
             Request More Information
           </h1>
           <p className="text-base text-slate-700 leading-relaxed max-w-xl mx-auto">
-            Ask about proxy visits, reporting, facility partnerships, or the
-            Virginia launch.
+            Ask about oversight plans, proxy visits, reporting, or a facility
+            partnership proposal.
           </p>
         </div>
 

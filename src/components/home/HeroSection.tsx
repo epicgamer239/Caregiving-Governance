@@ -13,13 +13,18 @@ export default function HeroSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           <div className="lg:col-span-7 space-y-4 md:space-y-5">
+            <p className="text-sm font-semibold tracking-wide text-[#2B4336] uppercase">
+              Caregiving Governance™
+            </p>
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-[2.75rem] xl:text-5xl font-semibold text-slate-900 tracking-tight leading-[1.15]">
-              Oversight for Nursing Home & Assisted Living Residents
+              Protective Oversight for Loved Ones in Assisted Living, Memory
+              Care & Nursing Homes
             </h1>
 
-            <p className="text-base sm:text-lg text-[#2B4336] font-medium leading-snug max-w-xl">
-              In-person proxy visits, clear reports, and escalation pathways —
-              for families and senior living operators.
+            <p className="text-base sm:text-lg text-slate-700 leading-snug max-w-2xl">
+              Structured, in-person proxy visits and governance-grade reporting
+              — so your loved one is never overlooked, and you are never left
+              wondering how they’re doing.
             </p>
 
             <div className="flex flex-wrap gap-3 items-center pt-1">
@@ -32,10 +37,10 @@ export default function HeroSection() {
               </button>
 
               <Link
-                href="/services"
+                href="/services#plans"
                 className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-[#2B4336] border border-[#2B4336]/80 px-5 py-3 rounded-md text-sm sm:text-base font-medium transition-all shadow-xs"
               >
-                <span>Explore Services</span>
+                <span>View Plans</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -43,11 +48,11 @@ export default function HeroSection() {
             <div className="p-4 bg-[#2B4336] border border-[#203328] rounded-lg shadow-xs">
               <p className="text-sm sm:text-base leading-relaxed text-slate-100">
                 <strong className="text-amber-300 font-semibold border-b border-amber-300/40 pb-0.5 mr-1.5">
-                  Protect. Report. Escalate.
+                  This is not caregiving.
                 </strong>
                 <span>
-                  In-person proxy visits for residents whose families can’t
-                  visit regularly.
+                  This is protective oversight — a layer of accountability that
+                  keeps residents visible, supported, and safe.
                 </span>
               </p>
             </div>
@@ -57,14 +62,14 @@ export default function HeroSection() {
             <div className="relative rounded-xl overflow-hidden border border-slate-200/90 shadow-md aspect-[4/3] max-h-[min(28rem,42svh)] lg:max-h-[min(32rem,48svh)] mx-auto w-full group">
               <img
                 src="/caregiving-hero-backdrop.png"
-                alt="Caregiver assisting elderly resident with walker"
+                alt="Protective oversight in a senior living environment"
                 className="w-full h-full object-cover object-center group-hover:scale-102 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent" />
 
               <div className="absolute bottom-3 left-3 right-3 p-3 bg-white/90 backdrop-blur-md rounded-lg border border-white/60 shadow-xs flex items-center gap-2.5 text-xs text-slate-800 font-medium">
                 <ShieldCheck className="w-4 h-4 text-[#2B4336] shrink-0" />
-                <span>Protective oversight when families can’t visit regularly</span>
+                <span>Your eyes and ears when you cannot visit regularly</span>
               </div>
             </div>
           </div>

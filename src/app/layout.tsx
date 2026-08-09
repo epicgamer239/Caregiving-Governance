@@ -18,9 +18,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Caregiving Governance™ | Governance-Forward Resident Oversight",
+  title: "Caregiving Governance™ | Protective Oversight for Senior Living",
   description:
-    "Scheduled in-person proxy visits, governance-grade reporting, and clear escalation pathways that protect residents, support families, and strengthen transparency for senior living operators.",
+    "Structured in-person proxy visits and governance-grade reporting for loved ones in assisted living, memory care, and nursing homes — protective oversight, not caregiving.",
 };
 
 export default function RootLayout({

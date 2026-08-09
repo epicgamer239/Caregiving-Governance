@@ -2,12 +2,14 @@ import Link from "next/link";
 import { Check, ArrowRight } from "lucide-react";
 
 export default function WhatWeDoSection() {
-  const groundingPoints = [
-    "Governance-aligned oversight",
-    "Structured observation",
-    "Trend tracking & escalation",
-    "Non-clinical monitoring",
-    "Institutional accountability",
+  const protocol = [
+    "Appearance & Hygiene",
+    "Mood & Engagement",
+    "Room Condition",
+    "Safety Cues",
+    "Staff Responsiveness",
+    "Signs of Decline",
+    "Red Flags",
   ];
 
   return (
@@ -19,29 +21,16 @@ export default function WhatWeDoSection() {
               What We Do
             </h2>
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Scheduled in-person proxy visits and structured reports for
-              residents whose families can’t visit regularly. We spot concerns
-              early and keep families and facilities aligned.
-            </p>
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Our work is grounded in{" "}
-              <strong className="text-[#2B4336] font-semibold border-b-2 border-amber-400/60 pb-0.5">
-                governance-grade, protective oversight
-              </strong>{" "}
-              — non-clinical monitoring that brings clarity and accountability
-              to senior living.
+              Caregiving Governance™ delivers scheduled proxy visits using a
+              structured observational protocol that evaluates:
             </p>
           </div>
 
           <div className="border-t border-b border-slate-100 py-8 space-y-4">
-            <h3 className="font-serif text-xl font-medium text-slate-900">
-              Our work is grounded in:
-            </h3>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
-              {groundingPoints.map((item, idx) => (
+              {protocol.map((item) => (
                 <div
-                  key={idx}
+                  key={item}
                   className="flex items-center gap-3 p-3.5 bg-[#FBF9F5] rounded-md border border-slate-200/70"
                 >
                   <div className="p-1 bg-amber-100 text-[#2B4336] rounded-md shrink-0">
@@ -56,19 +45,22 @@ export default function WhatWeDoSection() {
           </div>
 
           <div className="space-y-4 pt-2">
-            <p className="font-serif text-xl text-[#2B4336] font-medium leading-snug">
-              Early detection. Structured reporting. Clear escalation.
+            <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
+              After each visit, families receive a{" "}
+              <strong className="text-[#2B4336] font-semibold border-b-2 border-amber-400/60 pb-0.5">
+                governance-grade report
+              </strong>{" "}
+              with clear findings, recommended follow-up questions, and
+              escalation actions if needed.
             </p>
 
-            <div>
-              <Link
-                href="/about"
-                className="inline-flex items-center gap-2 text-[#2B4336] font-semibold text-base hover:underline decoration-amber-300 decoration-2 underline-offset-4"
-              >
-                <span>Learn How We Work</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
+            <Link
+              href="/services"
+              className="inline-flex items-center gap-2 text-[#2B4336] font-semibold text-base hover:underline decoration-amber-300 decoration-2 underline-offset-4"
+            >
+              <span>Explore Services</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </div>

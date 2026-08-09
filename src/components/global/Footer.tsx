@@ -10,9 +10,8 @@ export default function Footer() {
               Caregiving Governance™
             </span>
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
-              Governance-grade oversight through scheduled in-person proxy
-              visits, structured reporting, and clear escalation pathways for
-              residents, families, and senior living operators.
+              Protective oversight through structured proxy visits and
+              governance-grade reporting — not caregiving.
             </p>
           </div>
 
@@ -22,10 +21,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link
-                  href="/"
-                  className="hover:text-amber-300 transition-colors"
-                >
+                <Link href="/" className="hover:text-amber-300 transition-colors">
                   Home
                 </Link>
               </li>
@@ -58,12 +54,11 @@ export default function Footer() {
 
           <div className="space-y-3">
             <h4 className="font-serif text-lg font-medium text-amber-200">
-              Founded by Alecia Pazant
+              Pazant Consulting Services, LLC
             </h4>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Caregiving Governance™ delivers structured oversight, protective
-              monitoring, and institutional accountability for vulnerable
-              residents.
+              Caregiving Governance™ is a governance-grade oversight service
+              founded by Alecia Pazant.
             </p>
           </div>
         </div>
@@ -73,10 +68,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Caregiving Governance™. All rights
             reserved.
           </p>
-          <p>
-            Non-clinical, governance-aligned oversight for senior living
-            environments.
-          </p>
+          <p>Non-clinical, non-caregiving protective oversight.</p>
         </div>
       </div>
     </footer>

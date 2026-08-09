@@ -8,13 +8,11 @@ export default function WhoWeServeSection() {
   };
 
   const audienceList = [
-    "Out-of-state families",
-    "Families with limited mobility",
-    "Residents without visitors",
-    "Memory care residents",
-    "Understaffed nursing homes",
-    "Assisted living operators",
-    "CCRC communities",
+    "Memory Care Residents",
+    "Residents Without Regular Visitors",
+    "Families Living Out of State",
+    "Assisted Living Residents",
+    "Independent Living Residents",
   ];
 
   return (
@@ -25,15 +23,15 @@ export default function WhoWeServeSection() {
             Who We Serve
           </h2>
           <p className="text-base text-[#2B4336] font-medium">
-            Families and operators who need clarity and protective oversight —
-            not more noise.
+            Our model is non-clinical, non-caregiving, and fully
+            governance-aligned.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {audienceList.map((item, index) => (
             <button
-              key={index}
+              key={item}
               onClick={triggerConsultation}
               className="bg-white border border-slate-200 border-t-4 border-t-[#2B4336] rounded-lg p-6 shadow-xs hover:shadow-md transition-all text-left flex flex-col justify-between group cursor-pointer"
             >

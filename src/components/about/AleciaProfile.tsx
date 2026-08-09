@@ -3,12 +3,11 @@ import { Check } from "lucide-react";
 
 export default function AleciaProfile() {
   const workFocusList = [
-    "Decision pathways",
-    "Operating models",
-    "Oversight systems",
-    "Institutional accountability",
-    "Federal advisory",
-    "Prime-contractor compliance",
+    "Governance-forward operational leadership",
+    "Risk and accountability infrastructure",
+    "Cross-functional alignment and systems design",
+    "Executive-level advisory roles",
+    "Multi-site institutional oversight",
   ];
 
   return (
@@ -21,26 +20,26 @@ export default function AleciaProfile() {
                 Alecia Pazant
               </h2>
               <p className="text-base text-[#2B4336] font-medium">
-                Founder, Caregiving Governance™ · Organizational Effectiveness &
-                Governance Leader
+                Owner & CEO, Pazant Consulting Services, LLC · Founder,
+                Caregiving Governance™
               </p>
             </div>
 
             <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              A governance-forward leader with deep experience in federal
-              advisory, prime-contractor environments, and institutional
-              accountability. Her work in decision pathways, operating models,
-              and oversight systems shapes the Caregiving Governance™ approach.
+              Alecia is an organizational effectiveness and governance leader
+              with more than a decade of experience designing oversight systems,
+              decision pathways, and accountability structures for complex
+              institutions.
             </p>
 
             <div className="bg-amber-50/80 border border-amber-200/90 p-6 rounded-lg shadow-xs space-y-3">
               <h3 className="font-serif text-lg font-medium text-slate-900">
-                Her work has centered on:
+                Her background includes:
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {workFocusList.map((item, idx) => (
+                {workFocusList.map((item) => (
                   <div
-                    key={idx}
+                    key={item}
                     className="flex items-center gap-2.5 text-sm text-slate-800"
                   >
                     <div className="p-1 bg-amber-200/80 text-[#2B4336] rounded-md shrink-0">
@@ -52,16 +51,9 @@ export default function AleciaProfile() {
               </div>
             </div>
 
-            <p className="text-base sm:text-lg text-slate-700 leading-relaxed">
-              Her background includes senior federal advisory roles, service as
-              a Presidential Appointee at the U.S. Small Business
-              Administration, and more than a decade supporting major federal
-              prime contractors in governance and compliance.
-            </p>
-
             <p className="text-base sm:text-lg font-serif text-[#2B4336] font-medium italic">
-              Caregiving Governance™ extends that work: structured oversight and
-              protective monitoring for vulnerable residents.
+              Families deserve structured visibility. Residents deserve to be
+              seen, supported, and protected — not just cared for.
             </p>
           </div>
 
