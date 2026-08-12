@@ -1,4 +1,5 @@
 import ServicesGrid from "@/components/services/ServicesGrid";
+import HowOversightBeginsSection from "@/components/services/HowOversightBeginsSection";
 import SubscriptionPlansSection from "@/components/services/SubscriptionPlansSection";
 import WhoWeServeSection from "@/components/home/WhoWeServeSection";
 import FacilityPartnershipsSection from "@/components/home/FacilityPartnershipsSection";
@@ -8,6 +9,7 @@ export default function ServicesPage() {
   return (
     <>
       <ServicesGrid />
+      <HowOversightBeginsSection />
       <SubscriptionPlansSection detailed />
       <WhoWeServeSection />
       <FacilityPartnershipsSection />
