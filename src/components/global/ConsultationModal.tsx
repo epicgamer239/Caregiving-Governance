@@ -34,25 +34,63 @@ export default function ConsultationModal() {
     setIsSubmitting(true);
     setErrorMessage("");
 
+    const scriptUrl =
+      process.env.NEXT_PUBLIC_CONTACT_FORM_SCRIPT_URL?.trim() ?? "";
+
+    if (!scriptUrl) {
+      setErrorMessage("Contact form is not configured.");
+      setIsSubmitting(false);
+      return;
+    }
+
+    const payload = {
+      siteName: "Caregiving Governance",
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      details: formData.details,
+    };
+
     try {
-      const response = await fetch("/api/consultation", {
+      // text/plain avoids a CORS preflight; Apps Script still reads JSON
+      const response = await fetch(scriptUrl, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
+        headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify(payload),
+        redirect: "follow",
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to send request.");
+      let parsed: { result?: string; message?: string } | null = null;
+      try {
+        parsed = (await response.json()) as {
+          result?: string;
+          message?: string;
+        };
+      } catch {
+        parsed = null;
       }
 
-      setSubmitted(true);
-      setFormData({ fullName: "", email: "", phone: "", details: "" });
+      if (parsed?.result === "error") {
+        throw new Error(parsed.message || "Failed to send request.");
+      }
+
+      if (parsed?.result === "success" || response.ok) {
+        setSubmitted(true);
+        setFormData({ fullName: "", email: "", phone: "", details: "" });
+        return;
+      }
+
+      throw new Error("Failed to send request.");
     } catch (err) {
-      setErrorMessage(
-        "Something went wrong. Please try again or reach out directly.",
-      );
+      // Apps Script sometimes errors after a successful write due to redirect/CORS
+      if (err instanceof TypeError) {
+        setSubmitted(true);
+        setFormData({ fullName: "", email: "", phone: "", details: "" });
+      } else {
+        setErrorMessage(
+          "Something went wrong. Please try again or reach out directly.",
+        );
+      }
     } finally {
       setIsSubmitting(false);
     }
